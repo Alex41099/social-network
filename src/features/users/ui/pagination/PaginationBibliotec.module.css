@@ -1,0 +1,31 @@
+.paginate {
+    display: flex;
+    gap: 5px;
+
+    padding: 0;
+
+    li {
+        background-color: silver;
+        list-style-type: none;
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+
+        }
+    }
+
+    li:hover {
+        background-color: #1976d2;
+    }
+}
+
+.active {
+
+    background-color: #1976d2;
+    padding: 10px 20px;
+}

@@ -1,0 +1,21 @@
+.skeleton {
+    display: flex;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    div {
+        position: absolute;
+        bottom: 0;
+        left: 95px;
+        bottom: 20px;
+
+        span {
+            border-radius: 0 10px 10px 10px;
+            margin-bottom: 5px;
+        }
+    }
+}

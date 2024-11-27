@@ -1,0 +1,9 @@
+main {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+
+    padding: 15px 30px;
+
+}
