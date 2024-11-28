@@ -48,10 +48,6 @@ export const Profile = () => {
     setEditModeStatus(true)
   }
 
-  if (!isLogged) {
-    return <Navigate to={"/"}/>
-  }
-
   if (isLoading || load) {
     return (
       <div>
