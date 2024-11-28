@@ -1,15 +1,15 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { Provider } from "react-redux"
-import { store } from "./app/store"
-import {HashRouter, RouterProvider} from "react-router-dom"
-import { router } from "./app/routes/router"
+import {Provider} from "react-redux"
+import {store} from "./app/store"
+import {BrowserRouter, HashRouter} from "react-router-dom"
+import {App} from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
-  <Provider store={store}>
-      <HashRouter basename={process.env.PUBLIC_URL}>
-          <RouterProvider router={router} />
-      </HashRouter>
-  </Provider>,
+    <HashRouter basename={"https://alex41099.github.io/social-network/"}>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </HashRouter>
 )

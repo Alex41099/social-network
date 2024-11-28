@@ -15,6 +15,7 @@ import { AppBar, Button, LinearProgress, Toolbar, Typography } from "@mui/materi
 import IconButton from "@mui/material/IconButton"
 import MenuIcon from "@mui/icons-material/Menu"
 import styled from "styled-components"
+import {Main} from "./app/main/Main";
 
 export const App = () => {
   const dispatch = useAppDispatch()
@@ -80,7 +81,7 @@ export const App = () => {
             </Toolbar>
           </AppBar>
           <Aside />
-          <Outlet />
+          <Main/>
         </>
       ) : null}
     </>
