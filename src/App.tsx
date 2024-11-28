@@ -77,7 +77,6 @@ export const App = () => {
                 </>}
                 {!isLogged && !isMeProfile && "Нажмите на Login!"}
               </Typography>
-              {isLogged?  <Button color="inherit" onClick={logoutHandler}>logout</Button>: null}
             </Toolbar>
           </AppBar>
           <Aside />
