@@ -7,7 +7,7 @@ import {App} from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
-    <HashRouter basename={"https://alex41099.github.io/social-network/"}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
             <App/>
         </Provider>
