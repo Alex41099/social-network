@@ -1,7 +1,7 @@
 {
   "name": "react-kabzda-tsx-1",
   "version": "0.1.0",
-  "homepage": "https://Alex41099.github.io/social-network",
+  "homepage": "https://alex41099.github.io/social-network",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
