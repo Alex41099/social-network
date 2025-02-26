@@ -70,7 +70,6 @@ export const loginTC = (data: RequestLoginData): ThunkAction<any, RootState, unk
   return authApi.login(data)
       .then((res) => {
         if (res.data.resultCode === 0) {
-          localStorage.setItem("sn-token", res.data.data.token)
           dispatch(initializedTC()).then(() => {
               dispatch(setIsLogged({ isLogged: true }))
           })
@@ -88,7 +87,6 @@ export const logoutTC = (): ThunkAction<any, RootState, unknown, AnyAction> => (
   return authApi.logout()
       .then((res) => {
         if (res.data.resultCode === 0) {
-          localStorage.removeItem("sn-token")
           dispatch(setBurgerToggle({ burgerToggle: false }))
           dispatch(setIsMeProfile({isMeProfile: false}))
           dispatch(setIsLogged({ isLogged: false }))

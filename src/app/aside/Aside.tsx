@@ -41,7 +41,7 @@ export const Aside = ({}: AsidePropsType) => {
         {isLogged ? (
           <li>
             <NavLink
-              to={"/profile"}
+              to={"/"}
               onClick={toggleBurger}
               className={({ isActive, isPending }) => (isPending ? "pending" : isActive ? "active" : "")}
             >
